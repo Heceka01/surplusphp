@@ -109,7 +109,7 @@ body {
 .topbar .navbar ul li {
   display: inline-block;
   margin: 0px 8px;
-  width: 70px;
+  width: auto;
 }
 .topbar .navbar ul li a {
   color: #b3b3b3;
@@ -117,6 +117,7 @@ body {
   font-weight: bold;
   font-size: 14px;
   letter-spacing: 1px;
+ 
 }
 .topbar .navbar ul li a:hover,
 .topbar .navbar ul li a:active,
@@ -172,7 +173,8 @@ body {
   background-color: #252525;
 }
 .spotify-playlists .list .item img {
-  width: 100%;
+  width: 140px;
+  height: 140px;
   border-radius: 6px;
   margin-bottom: 10px;
 }

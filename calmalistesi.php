@@ -80,7 +80,7 @@ $uye = $uyeBilgi->fetch(PDO::FETCH_ASSOC);
                     <p>Hamza Can Korkmaz</p>
                 </li>
                 <li>
-                    <p>Hamza Can Korkmaz</p>
+                    <p>Yiğit Bayraktaroğlu</p>
                 </li>
             </ul>
         </div>

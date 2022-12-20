@@ -65,7 +65,7 @@ $uye = $uyeBilgi->fetch(PDO::FETCH_ASSOC);
           $listedurum = $listecek->fetchAll();
           foreach ($listedurum as $liste) { ?>
             <a href="calmalistesi.php?id=<?php echo $liste["id"]; ?>">
-              <span><?php echo $liste["ad"]; ?></span><br>
+              <span><?php echo $liste["ad"]; ?></span><br><br>
             </a>
           <?php
           }
@@ -125,10 +125,10 @@ $uye = $uyeBilgi->fetch(PDO::FETCH_ASSOC);
         <?php
         $sarkiCek = $db->prepare("SELECT * from sarkilar where kategori_id=:id");
         $sarkiCek->execute([":id" => $katName["id"]]);
-        $sarki = $sarkiCek->fetchAll();
-        
+        $sarki = $sarkiCek->fetchAll();?>
+        <div class="list"><?php
         foreach ($sarki as $sarkiBilgi) { ?>
-          <div class="list">
+          
             <div class="item">
               <img src="resimler/<?php echo $sarkiBilgi["resim_yolu"]; ?>.png" alt="<?php echo $sarkiBilgi["sarkici"] ?>" />
               <a href="sarkibilgi.php?id=<?php echo $sarkiBilgi["id"]; ?>">

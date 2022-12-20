@@ -75,7 +75,7 @@ if(isset($_POST["calmalistesi"])){
     $listesayi= $calmalistesicek->rowCount() + 1;
     
     $olustur = $db->prepare("INSERT INTO calmalistesi SET user_id=:id,ad=:ad");
-    $olustur->execute([":id"=>$id,":ad"=>"yeni çalma listesi $listesayi"]);
+    $olustur->execute([":id"=>$id,":ad"=>"Yeni Çalma Listesi $listesayi"]);
 
     header("Location:index.php");
 
