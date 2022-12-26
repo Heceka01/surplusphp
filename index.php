@@ -126,6 +126,7 @@ $uye = $uyeBilgi->fetch(PDO::FETCH_ASSOC);
         $sarkiCek = $db->prepare("SELECT * from sarkilar where kategori_id=:id");
         $sarkiCek->execute([":id" => $katName["id"]]);
         $sarki = $sarkiCek->fetchAll();?>
+        
         <div class="list"><?php
         foreach ($sarki as $sarkiBilgi) { ?>
           
@@ -139,13 +140,14 @@ $uye = $uyeBilgi->fetch(PDO::FETCH_ASSOC);
               <h4><?php echo $sarkiBilgi["sarkici"]; ?></h4>
               <p><?php echo $sarkiBilgi["sarki_ad"]; ?></p>
             </div>
-
+            &nbsp;
           <?php
         }
           ?>
 
 
-          </div>
+          
+      </div>
       </div>
     <?php
     }
