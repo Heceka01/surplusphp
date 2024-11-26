@@ -3,7 +3,7 @@ ob_start();
 session_start();
 $servername = "localhost";
 $username = "root";
-$password = "67719901*fsk";
+$password = "";
 
 try {
   $db = new PDO("mysql:host=$servername;dbname=surplus", $username, $password);
